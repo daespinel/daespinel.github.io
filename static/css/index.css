@@ -55,3 +55,15 @@ body {
 .bg-grey {
   background-color: rgb(87, 86, 86)!important;
 }
+
+.bg-grey1 {
+  background-color: rgb(158, 158, 158)!important;
+}
+
+.bg-blue {
+  background-color: rgb(15, 102, 89)!important;
+}
+
+.nav-link {
+  cursor: pointer;
+}

@@ -5,42 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <title>David Espinel</title>
+    <title>David Espinel Sarmiento</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="static/css/index.css" rel="stylesheet">
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script> 
+      $(function(){
+        $("#header").load("header.html"); 
+        $("#footer").load("footer.html");
+      });
+    </script>
   </head>
-  <body class="d-flex h-100 text-center text-white bg-dark">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
-  <main class="container">
-      <div class="p-4 p-md-5 mb-4 text-white rounded bg-grey">
-        <div class="row justify-content-md-center">
-          <div class="col-8 px-0">
-            <h1 class="display-6 fst-italic">Welcome to David Espinel's site</h1>
-            <p class="lead my-3">PhD Candidate with 3+ years of experience in virtualized networks.</p>
-            <p class="lead mb-0"><a href="#" class="text-white fw-bold">More about me...</a></p>
-          </div>
-          <div class="col-4 px-0">
-            <!--<svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><img src="src/david-mini.jpg"></svg>-->
-            <img width="60%" height="225" src="src/david-mini.jpg">
-          </div>
-      </div>
-      </div>
-
-      <h1>Building.</h1>
-      <p class="lead">Sorry. This page is under construction</p>
-      <p class="lead">
-        <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-      </p>
-
-
-  </main>
-
-  <footer class="mt-auto text-white-50">
-    <p>Powered with <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-  </footer>
+  <body class="d-flex h-100 text-white bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div id="header"></div>
+      <script>
+        $(function(){
+          $("#container-main").load("home.html"); 
+        });
+      </script>
+      <div id="container-main"></div>
+      <div id="footer"></div>
 </div>
 
 
